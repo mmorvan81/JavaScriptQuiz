@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Quiz</title>
+		<meta charset="UTF-8">
+		<link href="style.css" rel="stylesheet" type="text/css">
+        <script src = "script.js" type="text/javascript"></script>
+	</head>
+    <!--Created a div for the navigation bar on top for both the timer and score -->
+    <!--Created a div for the body of the quiz-->
+    <!--Created a div for the footer of the quiz-->
+	<body>
+		<div id="nav">
+			<div class="right">
+                <a onclick="getScore()" href="#"><h4 >View Highscore</h4></a>
+			</div>
+			<div class="left">
+				<h4>Time: <span id="timeLeft">0</span></h4>
+			</div>
+		</div>
+		<div id="quiz">
+            <div id="quizBody">      
+                <h1>   
+                    The Javascript Quiz!
+                <h3>
+					Click the start button to begin playing!   
+                </h3>
+                <button onclick="start()">Start Now!</button>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="footer">The JavaScript Test. <br>
+            You wil receive 50 points if you answer all 5 questions correctly. Good Luck! </div>
+         </div>
+	</body>
+</html>
